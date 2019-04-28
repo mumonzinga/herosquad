@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "HeroSquad"
+archivesBaseName = "hero-squad"
 applicationName = "HeroSquad"
 version = '1.0'
 mainClassName = "App"
