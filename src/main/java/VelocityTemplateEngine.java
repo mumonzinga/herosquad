@@ -15,20 +15,18 @@
  * limitations under the License.
  */
 package main.java;
-package spark.template.velocity;
+import org.apache.velocity.Template;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.VelocityEngine;
+import spark.ModelAndView;
+import spark.TemplateEngine;
+
 
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Properties;
-
-import org.apache.velocity.Template;
-import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.VelocityEngine;
-
-import spark.ModelAndView;
-import spark.TemplateEngine;
 
 /**
  * Template Engine based on Apache Velocity.
