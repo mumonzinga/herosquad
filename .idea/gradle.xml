@@ -7,6 +7,11 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$USER_HOME$/android-studio/gradle/gradle-5.1.1" />
         <option name="gradleJvm" value="10" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
