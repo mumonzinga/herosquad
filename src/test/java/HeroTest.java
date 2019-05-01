@@ -33,4 +33,11 @@ public class HeroTest {
         String expected = "fire";
         assertEquals(expected, myHero.getPower());
     }
+    @Test
+    public void getId_forHeroesName_int() {
+        main.java.Hero.clear();
+        main.java.Hero myHero = new main.java.Hero("mumo",40,"fire","liar");
+        assertEquals(1, myHero.getId());
+    }
+
 }
