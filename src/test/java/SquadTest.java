@@ -22,4 +22,11 @@ public class SquadTest {
         Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
         assertEquals("nerdsClubs", testSquad.getCause());
     }
+    @Test
+    public void all_returnsAllInstancesOfSquad_true() {
+        Squad firstSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        Squad secondSquad = new Squad("Geeks", 4, "Java literacy");
+        assertEquals(true, Squad.all().contains(firstSquad));
+        assertEquals(true, Squad.all().contains(secondSquad));
+    }
 }
