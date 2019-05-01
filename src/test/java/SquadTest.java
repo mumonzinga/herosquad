@@ -35,4 +35,26 @@ public class SquadTest {
         Squad.clear();
         assertEquals(Squad.all().size(), 0);
     }
+    @Test
+    public void getId_squadsInstantiatesWithAnId_1() {
+        Squad.clear();
+        Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        assertEquals(1, testSquad.getId());
+    }
+
+    @Test
+    public void find_returnsSquadWithSameId_secondSquad() {
+        Squad.clear();
+        Squad firstSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        Squad secondSquad = new Squad("Geeks", 4, "Java literacy ");
+        assertEquals(Squad.find(secondSquad.getId()), secondSquad);
+    }
+
+    @Test
+    public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
+        Squad.clear();
+        Squad testSquad = new Squad("nerdsClubs", 5, "Computer iliteracy");
+        assertEquals(0, testSquad.getHeroes().size());
+    }
+
 }
