@@ -1,5 +1,7 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 public class SquadTest {
 
     @Test
@@ -56,5 +58,21 @@ public class SquadTest {
         Squad testSquad = new Squad("nerdsClubs", 5, "Computer iliteracy");
         assertEquals(0, testSquad.getHeroes().size());
     }
+    @Test
+    public void addHero_addsHeroToList_true() {
+        Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        main.java.Hero testHero = new main.java.Hero("prodigy", 20, "intelligent", "Power failure");
+        testSquad.addHero(testHero);
+        assertTrue(testSquad.getHeroes().contains(testHero));
+    }
 
+    @Test
+    public void heroAlreadyExists_checksIfHeroExistsinSquads_true() {
+        Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        main.java.Hero testHero = new main.java.Hero("prodigy", 20, "intelligent", "power outage");
+        testSquad.addHero(testHero);
+        assertTrue(testSquad.heroAlreadyExists(testHero));
+
+
+    }
 }
