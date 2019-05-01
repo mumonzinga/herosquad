@@ -17,4 +17,9 @@ public class SquadTest {
         Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
         assertEquals(5, testSquad.getSize());
     }
+    @Test
+    public void getCause_squadInstantiatesWithCause_String() {
+        Squad testSquad = new Squad("nerdsClubs", 5, "Computer illiteracy");
+        assertEquals("nerdsClubs", testSquad.getCause());
+    }
 }
