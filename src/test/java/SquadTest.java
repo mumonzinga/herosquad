@@ -7,4 +7,10 @@ public class SquadTest {
         Squad testSquad = new Squad("nerdsClub", 5, "Computer illiteracy");
         assertEquals(true, testSquad instanceof Squad);
     }
+    @Test
+    public void getName_squadInstantiatesWithName_String() {
+        Squad testSquad = new Squad("nerdsClub", 5, "Computer illiteracy");
+        assertEquals("nerdsClub", testSquad.getName());
+    }
+
 }
